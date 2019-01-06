@@ -145,6 +145,7 @@ var boardButtonCallback = function(t){
       {
         text: 'Open Modal',
         callback: function(t){
+          console.log(t.lists());
           return t.modal({            
             url: './modal.html', // The URL to load for the iframe
             args: { text: 'Hello' }, // Optional args to access later with t.arg('text') on './modal.html'
