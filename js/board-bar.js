@@ -18,11 +18,11 @@ t.render(function(){
 		console.log('checking if ' + element + ' is loaded');
 		var el = document.querySelector(element);
 		if (el) {
-			console.log(element + ' is loaded');
+			console.log(element + ' is loaded from power-up');
 			// addButton(el);
 			// runScript(el);	
 		} else {
-			console.log(element + ' not loaded');
+			console.log(element + ' not loaded from power-up');
 			setTimeout(function() {
 				checkBoardLoad(element);	
 			}, 500);
