@@ -3,3 +3,7 @@ body {
   color: white;
   padding: 18px;
 }
+
+.list-card {
+  border: 10px solid red !important;
+}

@@ -12,22 +12,4 @@ t.render(function(){
   // and then called each time something changes that
   // you might want to react to, such as new data being
   // stored with t.set()
-  console.log('loaded');
-
-  function checkBoardLoad(element) {
-		console.log('checking if ' + element + ' is loaded');
-		var el = document.querySelector(element);
-		if (el) {
-			console.log(element + ' is loaded from power-up');
-			// addButton(el);
-			// runScript(el);	
-		} else {
-			console.log(element + ' not loaded from power-up');
-			setTimeout(function() {
-				checkBoardLoad(element);	
-			}, 500);
-		}
-	}
-	
-	checkBoardLoad('.board-header-btns.mod-right');	
 });
